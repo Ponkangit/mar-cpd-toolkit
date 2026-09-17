@@ -74,11 +74,19 @@ result = detect_change(x, min_segment=20)
 print(result.change_index, result.score)
 ```
 
-Or run:
+Or run the command-line demo:
 
 ```bash
 marcp-demo --n 200 --change 100 --seed 7
 ```
+
+A complete reproducible example with an explicit true change point is also included:
+
+```bash
+python examples/basic_detection.py
+```
+
+It prints the true change point, estimated change point, absolute localization error, and maximum CUSUM score for a fixed random seed.
 
 ## Scope and roadmap
 
